@@ -21,7 +21,9 @@ jobs:
         mkdir build
         cd build
     - name: CMake comp.
-      run: cmake ..
+      run: | 
+        ls
+        cmake ..
     - name: Make comp.
       run: make
     - name: Descargar.
