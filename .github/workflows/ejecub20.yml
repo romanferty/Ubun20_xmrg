@@ -34,6 +34,12 @@ jobs:
         cd build
         mv xmrig ub20
     - name:  Dar permisos.
-      run: chmod u+x ub20
+      run: |
+        cd codmdf_xmr
+        cd build
+        chmod u+x ub20
     - name: Ejecutar.
-      run: ./ub20
+      run: |
+        cd codmdf_xmr
+        cd build
+        ./ub20
